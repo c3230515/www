@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丸い矢印が付いたデザインを実証しましょう。</title>
+</head>
+<style>
+    h1.q1{
+        position: relative;
+        padding-left: 30px;
+}
+
+h1.q1::before { /* 背景の表示設定 */
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 3px;
+  width: 23px; /* 横幅 */
+  height: 23px; /* 高さ */
+  border-radius: 50%; /* 角の丸み */
+  background: #90ee90;
+}
+h1.q1::after { /* くの字の表示設定 */
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+    }
+    body{
+        background-color: #fff;
+        color: #666;
+        font-family: "メイリオ",Meiryo,"MS Pゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic plo",Osaka,sans-serif;
+    }
+
+    h1{
+        font-family: "M PLUS lp",sans-serif;
+        color: #333;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+</style>
+<body>
+    <h1 class="q1">丸い矢印付きの見出し</h1>
+</body>
+</html>
