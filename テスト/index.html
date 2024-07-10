@@ -1,10 +1,11 @@
 <!DOCTYPE html>
- <html lang="ja">
- <head>
+<html lang="ja">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,6 +15,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
         }
         .profile-card {
             background-color: white;
@@ -67,8 +73,13 @@
             background-color: #45a049;
         }
         @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
             .profile-card {
                 width: 90%;
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -77,18 +88,31 @@
             alert('You are now following this user!');
         }
     </script>
- </head>
- <body>
-    <div class="profile-card">
-        <img src="img/profile.jpg" alt="Profile Image">
-        <h2>John Doe</h2>
-        <p>Web Developer & Designer. Passionate about creating interactive and dynamic web experiences.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="img/profile.jpg" alt="Profile Image">
+            <h2>John Doe</h2>
+            <p>Web Developer & Designer. Passionate about creating interactive and dynamic web experiences.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <button class="button" onclick="followAlert()">Follow</button>
         </div>
-        <button class="button" onclick="followAlert()">Follow</button>
+        <div class="profile-card">
+            <img src="img/profile.jpg" alt="Profile Image">
+            <h2>John Doe</h2>
+            <p>Web Developer & Designer. Passionate about creating interactive and dynamic web experiences.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <button class="button" onclick="followAlert()">Follow</button>
+        </div>
     </div>
- </body>
- </html>
+</body>
+</html>
