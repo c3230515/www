@@ -14,7 +14,6 @@
         #box1, #box2, #box3 {
             padding: 20px;
             margin: 20px 0;
-            flex-basis: 35%;
             box-sizing: border-box;
         }
         #box1 {
@@ -38,6 +37,10 @@
             height: auto; 
         }
         @media screen and (max-width: 1024px) {
+            body {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
             #box1, #box2 {
                 width: 45%;
             }
