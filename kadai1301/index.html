@@ -6,6 +6,11 @@
     <title>Responsive Design with Button Actions</title>
     <style>
         h1{
+            background-color: #000;
+            width: 100%;
+        }
+        #maku{
+            background-color: #000;
             width: 100%;
         }
         body {
@@ -41,7 +46,7 @@
             width: 23%;
         }
         img {
-            width: 100%; 
+            width: 80%; 
             height: auto; 
         }
         @media screen and (max-width: 1024px) {
@@ -62,6 +67,11 @@
             }
         }
     </style>
+    <script>
+        function showAlert(){
+            alert('Button clicked')
+        }
+    </script>
 </head>
 <body>
     <h1>Responsive Design with Button Actions</h1>
@@ -69,21 +79,28 @@
         <h2>Section 1</h2>
         <p>This is the first section. It has a light blue background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p>
         <img src="images/section1.jpg" alt="section1">
+        <button class="button" onclick="showAlert()"> Click Me</button>  
     </div>
     <div id="box2">
         <h2>Section 2</h2>
         <p>This is the second section. It has a light orange background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p>
         <img src="images/section2.jpg" alt="section2">
+        <button class="button" onclick="showAlert()"> Click Me</button>
     </div>
     <div id="box3">
         <h2>Section 3</h2>
         <p>This is the third section. It has a light purple background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p>
         <img src="images/section3.jpg" alt="section3">
+        <button class="button" onclick="showAlert()"> Click Me</button>
     </div>
     <div id="box4">
         <h2>Section 4</h2>
         <p>This is the fourth section. It has a light green background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p>
         <img src="images/section4.jpg" alt="section4">
+        <button class="button" onclick="showAlert()"> Click Me</button>
+    </div>
+    <div id="maku">
+        <p>© 2024 Advanced Responsive Design Practice</p>
     </div>
 </body>
 </html>
