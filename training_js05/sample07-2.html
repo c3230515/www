@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>要素の取得と内容の変更</title>
+    <style>
+        .red{
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>座席の予約</h1>
+    東京会議<span class="p1" id="red"（予約受付中）></span></br>
+    <button onclick="yoyaku()" id="yoyaku"> 予約する</button>
+</body>
+<script>
+    function yoyaku(){
+        let b = document.createElement("h2")
+        document.getElementById('red').textContent = '（予約済み）';
+    }
+</script>
+</html>
