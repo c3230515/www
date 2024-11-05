@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>複数の要素の取得</title>
+    <title>要素の追加と削除</title>
 </head>
 <body>
-    <h3>人口の多い国ランキング</h3>
+    <h3>写真の一覧</h3>
+    <p>以下のボタンをクリックすると、写真が一覧表示されます</p>
     <ul id="kuni">
         <li>中国</li>
         <li>インド</li>
@@ -17,10 +18,10 @@
     <script>
         let list = document.querySelectorAll('#kuni li');
         function showKoki(){
-            list[0].innerHTML = '<img src="images/flag_CHN.png">'; 
-            list[1].innerHTML = '<img src="images/flag_IND.png">'; 
-            list[2].innerHTML = '<img src="images/flag_USA.png">'; 
-            list[3].innerHTML = '<img src="images/flag_IDN.png">'; 
+            list[0].textContent = '<img src="images/flag_CHN.png">'; 
+            list[1].textContent = '<img src="images/flag_IND.png">'; 
+            list[2].textContent = '<img src="images/flag_USA.png">'; 
+            list[3].textContent = '<img src="images/flag_IDN.png">'; 
         }
     </script>
 </body>
