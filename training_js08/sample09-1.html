@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>要素の追加と削除</title>
+</head>
+<body>
+    <h3>写真の一覧</h3>
+    <p>以下のボタンをクリックすると、写真が一覧表示されます</p>
+    <ul id="image">
+
+    </ul>
+    
+    <button onclick="showimages()">写真表示</button>
+    <script>
+        let list = ['<img src="images/photo_1.jpg">' , '<img src="images/photo_2.jpg">' , '<img src="images/photo_3.jpg">' , '<img src="images/photo_4.jpg">' , '<img src="images/photo_5.jpg">' , '<img src="images/photo_6.jpg">' , '<img src="images/photo_7.jpg">' , '<img src="images/photo_8.jpg">'];
+        function showimages(){
+            let ulBox = document.getElementById('image');
+            for (let i = 0; i < list.length; i++){
+                ulBox.insertAdjacentHTML('beforeend' , list[i]);
+            }
+        }   
+    </script>
+</body>
+</html>
