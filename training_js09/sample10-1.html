@@ -11,12 +11,10 @@
     <button id="btn" onclick="show()">ヒントを見る</button><br>
     <span class="p1" id="red">(注意)北海道は「県」ではありません</span>
     <script>
+        let clickTimes = 0;
         function show() {
             var button = document.getElementById("bth");
             button.innerHTML = "答えを見る";
-        }
-        let clickTimes = 0;
-        function show() {
             clickTimes++;
             switch (clickTimes) {
                 case 1:
