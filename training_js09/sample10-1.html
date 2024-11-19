@@ -13,12 +13,12 @@
     <script>
         let clickTimes = 0;
         function show() {
-            var button = document.getElementById("bth");
-            button.innerHTML = "答えを見る";
             clickTimes++;
             switch (clickTimes) {
                 case 1:
                     document.getElementById('red').textContent ='東北地方にあります。' ;
+                    var button = document.getElementById("bth");
+                    button.innerHTML = "答えを見る";
                     break;
                 default:
                     document.getElementById('red').textContent ='答えは「岩手県」です。' ;
