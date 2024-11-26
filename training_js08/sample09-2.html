@@ -28,10 +28,10 @@
     
     <script>
         function createTable() {
-            let list = ['大人' , '高校生' , '中学生' ,'小学生'];
+            let list = ['','大人' , '高校生' , '中学生' ,'小学生'];
             let no = ['800' , '680' , '450' , '380'];
             let row = '<tr>';
-            for (let j = 0; j <= list.length; j++){
+            for (let j = 0; j+1 <= list.length; j++){
                 row = row + '<th>' + list[j] + '</th>';
             }
             row = row + '</tr>';
