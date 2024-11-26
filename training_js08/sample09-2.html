@@ -30,15 +30,15 @@
         function createTable() {
             let list = ['大人' , '高校生' , '中学生' ,'小学生'];
             let no = ['800' , '680' , '450' , '380'];
-            let row = '<th>';
+            let row = '<tr>';
             for (let j = 0; j+1 <= list.length; j++){
-                row = row + '<td>' + list[j] + '</td>';
+                row = row + '<th>' + list[j] + '</th>';
             }
-            row = row + '</th>';
+            row = row + '</tr>';
             document.getElementById('t_head').insertAdjacentHTML('beforeend', row);
 
             for (let i = 1; i <= 5 ; i++){
-                let row = '<tr><td>' + i +'人'+ '</td>';
+                let row = '<tr><th>' + i +'人'+ '</th>';
                 for (let j = 0; j+1 <= no.length; j++){
                     row = row + '<td>' + i*no[j] +'円'+ '</td>';
                 }
