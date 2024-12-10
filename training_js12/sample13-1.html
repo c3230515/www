@@ -31,26 +31,8 @@
 
     function check(num){
         for (let j = 10; j <= num - 1; j++){
-            if(num % 1 == 0){
-                if(num % 2 == 0){
-                    if(num % 3 == 0){
-                        if(num % 4 == 0){
-                            if(num % 5 == 0){
-                                if(num % 6 == 0){
-                                    if(num % 7 == 0){
-                                        if(num % 8 == 0){
-                                            if(num % 9 == 0){
-                                                if(num % 10 == 0){
-                                                    return true;
-                                                }
-                                             }
-                                        }
-                                    }
-                                }
-                             }
-                        }
-                    }
-                }
+            if(num % 9 == 0){
+                return true;
             }
         }
         return false;
