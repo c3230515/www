@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数値の入力</title>
+    <style>
+        #message {
+            width: 500px;
+            padding: 15px;
+            margin: 25px 0px;
+            background-color: #FFCC99;
+        }
+    </style>
+</head>
+<body>
+    <h1>n~mで割り切れる数字</h1>
+    <p>1~10の好きな範囲で</p>
+    <p>割り切れる最小の数値をJavaScriptで求めます。</p>
+    <button onclick="show()">範囲を指定</button>
+    <div id="message">ここに結果が表示されます。</div>
+
+    <script>
+        function show() {
+            let min = parseInt(prompt('範囲の最小値を1~10で入力してください'));
+            let max = parseInt(prompt('範囲の最大値を1~10で入力してください'));
+            function gcd(a, b) {
+                return b === 0 ? a : gcd(b, a % b);
+            }
+
+            function lcm(a, b) {
+                return (a * b) / gcd(a, b);
+            }
+
+            function findLCMInRange(min, max) {
+                let result = min;
+                for (let i = min + 1; i <= max; i++) {
+                    result = lcm(result, i);
+                }
+                return result;
+            }
+        }
+    </script>
+</body>
+</html>
