@@ -21,9 +21,6 @@
     <div id="message">ここに結果が表示されます。</div>
 
     <script>
-        function show() {
-            let min = parseInt(prompt('範囲の最小値を1~10で入力してください'));
-            let max = parseInt(prompt('範囲の最大値を1~10で入力してください'));
             function gcd(a, b) {
                 return b === 0 ? a : gcd(b, a % b);
             }
@@ -39,6 +36,10 @@
                 }
                 return result;
             }
+            
+            function show() {
+            let min = parseInt(prompt('範囲の最小値を1~10で入力してください'));
+            let max = parseInt(prompt('範囲の最大値を1~10で入力してください'));
             document.getElementById('message').textContent = min + "~" + max + "で割り切れる最小の数値は" + result + "です。";
         }
     </script>
