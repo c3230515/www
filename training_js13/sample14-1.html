@@ -40,6 +40,10 @@
             function show() {
             let min = parseInt(prompt('範囲の最小値を1~10で入力してください'));
             let max = parseInt(prompt('範囲の最大値を1~10で入力してください'));
+            if(min < 0 || max < 0 || min%1 != 0 || max%1 != 0 || min > max){
+                alert("範囲内の数値を入力してください。");
+                return;
+            }
             document.getElementById('message').textContent = min + "~" + max + "で割り切れる最小の数値は" + findLCMInRange(min, max) + "です。";
         }
     </script>
