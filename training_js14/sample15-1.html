@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロパティ</title>
+<style>
+
+</style>
+</head>
+
+<body>
+<h3>HTMLの表示</h3>
+<p>ボックス内に表示されている部分のHTMLを表示します。</p>
+<h3>人口800万人以上の都道府県</h3>
+<ul><li>東京都</li><li>神奈川県</li><li>大阪府</li></ul>
+<button onclick="show()">HTMLを表示</button>
+<div id="message">ここに結果が表示されます。</div>
+
+<script>
+    document.getElementById('message').textContent = "<h3>人口800万人以上の都道府県</h3><ul><li>東京都</li><li>神奈川県</li><li>大阪府</li></ul>";
+</script>
