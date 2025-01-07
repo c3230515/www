@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<h3>HTMLの表示</h3>
+<h1>HTMLの表示</h1>
 <p>ボックス内に表示されている部分のHTMLを表示します。</p>
 <h3>人口800万人以上の都道府県</h3>
 <ul><li>東京都</li><li>神奈川県</li><li>大阪府</li></ul>
@@ -18,5 +18,7 @@
 <div id="message">ここに結果が表示されます。</div>
 
 <script>
-    document.getElementById('message').textContent = "<h3>人口800万人以上の都道府県</h3><ul><li>東京都</li><li>神奈川県</li><li>大阪府</li></ul>";
-</script>
+    function show(){
+        document.getElementById('message').textContent = "<h3>人口800万人以上の都道府県</h3><ul><li>東京都</li><li>神奈川県</li><li>大阪府</li></ul>";
+    }
+    </script>
