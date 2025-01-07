@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>プロパティ</title>
 <style>
-
+    #box{
+        border: 2px solid #000;
+    }
+    #message{
+        border: 2px solid #000;
+    }
 </style>
 </head>
 
 <body>
 <h1>HTMLの表示</h1>
 <p>ボックス内に表示されている部分のHTMLを表示します。</p>
-<h3>人口800万人以上の都道府県</h3>
-<ul><li>東京都</li><li>神奈川県</li><li>大阪府</li></ul>
+<div id="box1">
+    <h3>人口800万人以上の都道府県</h3>
+    <ul><li>東京都</li><li>神奈川県</li><li>大阪府</li></ul>
+</div>
 <button onclick="show()">HTMLを表示</button>
 <div id="message">ここに結果が表示されます。</div>
 
